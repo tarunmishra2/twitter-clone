@@ -1,0 +1,14 @@
+.feed {
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgb(47, 51, 54);
+}
+
+.feed-item {
+    list-style: none;
+    border-bottom: 1px solid rgb(47, 51, 54);
+}
+
+.feed-item:last-child {
+    border-bottom: none;
+}

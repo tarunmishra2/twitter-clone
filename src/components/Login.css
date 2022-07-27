@@ -1,0 +1,45 @@
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url("https://i.redd.it/5xirqoi1mpy61.png");
+}
+
+.login-twitter-icon {
+    margin-top: 1rem;
+    margin-left: 7.5rem;
+}
+
+.login-form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 4px 60px;
+}
+
+.login-title {
+    color: rgb(8, 53, 83);
+    text-align: center;
+    font-size: 25px;
+}
+
+.login-button {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(29, 155, 240);
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    transition: 100ms;
+    border-radius: 10rem;
+}
+
+button:hover {
+    opacity: .85;
+}
