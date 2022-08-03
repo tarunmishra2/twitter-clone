@@ -1,5 +1,8 @@
+body {
+    position: relative;
+}
 .app {
-    max-width: 600px;
+    max-width: 625px;
     margin: 0 auto;
     margin-top: 20px;
 }
@@ -31,6 +34,9 @@
 }
 
 .logout {
+    position: absolute;
+    top: 2px;
+    right: 370px;
     padding: 5px 15px;
     margin-left: 27rem;
     width: auto;
@@ -46,4 +52,23 @@
 
 .logout:hover {
     opacity: .8;
+}
+
+.search {
+    position: absolute;
+    right: 42%;
+    top: -10px;
+}
+
+.searchbar {
+    margin-left: 10px;
+    padding: 12px 15px;
+    border-radius: 20px;
+    background-color: rgba(250, 235, 215, 0.014);
+    color: white;
+}
+
+.search-icon {
+    font-size: 20px;
+    color: rgb(0, 195, 255);
 }

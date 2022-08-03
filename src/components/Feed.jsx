@@ -3,19 +3,6 @@ import Tweet from "./Tweet.jsx";
 import "./Feed.css";
 
 function Feed({ tweets }) {
-  
-  // const [tweets, setTweets] = useState([]);
-  // const URL = "https://tweets.free.beeceptor.com/tweets/all";
-  // const fetchData = async () => {
-  //   let response = await fetch(URL);
-  //   let resJson = await response.json();
-  //   setTweets(resJson);
-  // };
-
-  // useEffect(() => {
-  //   fetchData();
-  // }, []);
-
   return (
     <ul className="feed">
       {tweets

@@ -26,7 +26,7 @@ const Login = () => {
       placeholder: "Password",
       errorMessage:
         "Password should include at least 1 uppercase letter, 1 number and a special character!",
-      pattern: `^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$`,
+      pattern: `^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
       required: true,
     },
   ];
@@ -39,18 +39,20 @@ const Login = () => {
     setValues({ ...values, [e.target.name]: e.target.value });
   };
 
-//   function LoginButton() {
-//     if (values != "") {
-//         return <button className="login-button" onClick={() => {
-//                 navigate("/Home")
-//             }}>
-//                 Login</button>
-//     } else {
-//         return <button className="login-button" disabled>Login</button>
-//     }
-//   }
-
   const navigate = useNavigate();
+  
+  // ========== LOGIN CHECK ==========
+  const isValid = Boolean(values.email && values.password)
+
+  function LoginButton() {
+    if (!isValid) {
+      alert("Missing Fields");
+    } else {
+      navigate("/home")
+    }
+  }
+
+  // ========== JSX Elements ==========
   
   return (
     <div className="login">
@@ -65,12 +67,7 @@ const Login = () => {
             onChange={onChange}
           />
         ))}
-        <button className="login-button" onClick={() => {
-            if(values != ""){
-                navigate("/Home")
-        } else {
-            navigate("/")
-        }}}>
+        <button className="login-button" onClick={LoginButton}>
                 Login</button>
       </form>
     </div>

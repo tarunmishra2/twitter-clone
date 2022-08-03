@@ -3,7 +3,7 @@ import "./LoginInput.css";
 
 const LoginInput = (props) => {
   const [focused, setFocused] = useState(false);
-  const { label, errorMessage, onChange, id, ...inputProps } = props;
+  const { errorMessage, onChange, id, ...inputProps } = props;
 
   const handleFocus = (e) => {
     setFocused(true);
@@ -11,7 +11,6 @@ const LoginInput = (props) => {
 
   return (
     <div className="login-input">
-      <label>{label}</label>
       <input
         {...inputProps}
         onChange={onChange}

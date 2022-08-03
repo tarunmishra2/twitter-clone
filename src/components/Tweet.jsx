@@ -1,9 +1,9 @@
+import React from "react";
 import Avatar from "./Avatar";
 import "./Tweet.css";
-import React from "react";
 
-function Tweet(props) {
-  const { userName, date, children } = props;
+
+function Tweet({ userName, date, children }) {
 
   return (
     <div className="tweet">

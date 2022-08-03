@@ -31,3 +31,13 @@
     padding-left: 3px;
     padding-bottom: 15px;
 }
+
+.edit-tweet {
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+.delete-tweet {
+    cursor: pointer;
+}
+

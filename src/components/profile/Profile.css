@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.App {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 7%;
+    transform: scale(115%);
+}
+
+.text-content {
+    font-weight: 700;
+    font-size: 18px;
+    color: rgb(26, 26, 26);
+    background-color: white;
+}
+
+.stat-content {
+    margin-left: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgb(26, 26, 26);
+    background-color: white;
+}
+
+.profile {
+    height: 200px;
+    color: hsla(0, 0%, 21%, 0.986);
+    width: 400px;
+    background-color: white;
+    border-bottom: 1px solid rgba(122, 120, 120, 0.548);
+}
+
+.profile .container {
+    position: relative;
+    top: 73px;
+    left: 3px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.circle {
+    position: relative;
+    width: 400px;
+    height: 150px;
+    background-color: #45d3d8;
+}
+
+.circle img {
+    position: absolute;
+    width: 120px;
+    height: 115px;
+    bottom: -60px;
+    right: 34%;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.status-divs {
+    width: 400px;
+    display: flex;
+    color: rgb(54, 54, 54);
+    font-size: 12px;
+}
+
+.Status {
+    height: 70px;
+    width: 300px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
