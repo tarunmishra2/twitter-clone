@@ -21,7 +21,7 @@ function Home() {
 
 //  ========== CALLING TWEET API ==========
  async function getData(){
-   const res = await axios.get("https://tweetnow.free.beeceptor.com")
+   const res = await axios.get("https://tweets.free.beeceptor.com/tweets/all")
    setData(res.data)
    setTweets(res.data)
    setSearchData(res.data)
